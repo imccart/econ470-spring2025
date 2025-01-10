@@ -1,0 +1,12 @@
+---
+title: "Class 2: Software Setup"
+---
+
+
+Today, we'll make sure we're all set up up with `R`, `Git`, `GitHub`, and `VS Code`. We'll also review some basic `R` concepts and get started with `Git` and `VS Code`.
+
+## Objectives
+- Set up VS Code with R and Git. For some basic instructions, see [R in VS Code](https://code.visualstudio.com/docs/languages/r) and [Git in VS Code](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git)
+- Set up SSH keys for communication with GitHub. Some tips available [here](https://happygitwithr.com/ssh-keys).
+- Create your first repository
+- Review data manipulation in `R` using the `tidyverse`

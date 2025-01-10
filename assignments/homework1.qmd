@@ -1,0 +1,39 @@
+---
+title: "Homework 1"
+format:
+  pdf: default
+---
+
+## Instructions
+This assignment is entirely about GitHub and data management. The goal is to give you a chance to practice wrangling and tidying data. We do this very early in the class because we will start doing some empirical analysis using real data soon. The faster you are comfortable with the datasets, the better. For more detailed instructions on how to submit your homework answers, please see the overview page [here](/assignments/). 
+
+Since this first homework assignment is a little unique and more about your software setup, homework 1 only consists of two submission stages instead of three. The due date for initial submission is **1/29**, and the final due date is **1/31**.
+
+## Setup
+The first half of this assignment is entirely about version control in Git, setting up your GitHub respository, committing and pushing changes to your GitHub respository, and organizing your project folders. These steps are worth 9 points at each submission stage. Once you have your software setup complete, move on to the next part of the assignment.
+
+
+## Building the data
+Most of your professional lives will likely involve managing data. It can be tedious but also extremely rewarding when you finally get to find out what's going on in the analysis stage. Anyway, let's get to work! All of these questions require you to use the [Medicare Advantage GitHub Repo](https://github.com/imccart/ma-class).
+
+Specifically, we need to organize the [Monthly Plan Enrollment Data](https://github.com/imccart/ma-class/blob/main/data-code/1_Plan_Data.R) focusing only on 2015. Once you've created your final dataset (it's called *full_ma_data* in my code), answer the following:
+
+1. Provide a table of the count of plans under each plan type. Your table should look something like @tbl-extable. (3 points)
+
+```{r}
+#| include: false
+#| eval: true
+test.data <- matrix(round(runif(15,10,50),0),nrow=3, ncol=1)
+row.names(test.data) <- c("Type 1", "Type 2", "Type 3")
+```
+
+```{r}
+#| echo: false
+#| label: tbl-extable
+#| tbl-cap: Plan Count by Year
+knitr::kable(test.data, col.names=c("2015"),
+             type="html", booktabs = TRUE)
+```
+
+2. Remove all special needs plans (SNP), employer group plans (eghp), and all "800-series" plans. Provide an updated version of @tbl-extable after making these exclusions. (3 points)
+ 
