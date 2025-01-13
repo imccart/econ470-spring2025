@@ -46,21 +46,33 @@
     "href": "assignments/homework1.html",
     "title": "Homework 1",
     "section": "",
-    "text": "This assignment is entirely about GitHub and data management. The goal is to give you a chance to practice wrangling and tidying data. We do this very early in the class because we will start doing some empirical analysis using real data soon. The faster you are comfortable with the datasets, the better. For more detailed instructions on how to submit your homework answers, please see the overview page here.\nThe due date for initial submission is 1/29, and the final due date is 1/31."
+    "text": "This assignment is entirely about GitHub and data management. The goal is to give you a chance to practice wrangling and tidying data. We do this very early in the class because we will start doing some empirical analysis using real data soon. The faster you are comfortable with the datasets, the better. For more detailed instructions on how to submit your homework answers, please see the overview page here.\nSince this first homework assignment is a little unique and more about your software setup, homework 1 only consists of two submission stages instead of three. The due date for initial submission is 1/29, and the final due date is 1/31.",
+    "crumbs": [
+      "Assignments",
+      "Homework 1"
+    ]
   },
   {
     "objectID": "assignments/homework1.html#instructions",
     "href": "assignments/homework1.html#instructions",
     "title": "Homework 1",
     "section": "",
-    "text": "This assignment is entirely about GitHub and data management. The goal is to give you a chance to practice wrangling and tidying data. We do this very early in the class because we will start doing some empirical analysis using real data soon. The faster you are comfortable with the datasets, the better. For more detailed instructions on how to submit your homework answers, please see the overview page here.\nThe due date for initial submission is 1/29, and the final due date is 1/31."
+    "text": "This assignment is entirely about GitHub and data management. The goal is to give you a chance to practice wrangling and tidying data. We do this very early in the class because we will start doing some empirical analysis using real data soon. The faster you are comfortable with the datasets, the better. For more detailed instructions on how to submit your homework answers, please see the overview page here.\nSince this first homework assignment is a little unique and more about your software setup, homework 1 only consists of two submission stages instead of three. The due date for initial submission is 1/29, and the final due date is 1/31.",
+    "crumbs": [
+      "Assignments",
+      "Homework 1"
+    ]
   },
   {
     "objectID": "assignments/homework1.html#building-the-data",
     "href": "assignments/homework1.html#building-the-data",
     "title": "Homework 1",
     "section": "Building the data",
-    "text": "Building the data\nMost of your professional lives will likely involve managing data. It can be tedious but also extremely rewarding when you finally get to find out what’s going on in the analysis stage. Anyway, let’s get to work! All of these questions require you to use the Medicare Advantage GitHub Repo."
+    "text": "Building the data\nMost of your professional lives will likely involve managing data. It can be tedious but also extremely rewarding when you finally get to find out what’s going on in the analysis stage. Anyway, let’s get to work! All of these questions require you to use the Medicare Advantage GitHub Repo.\nSpecifically, we need to organize the Monthly Plan Enrollment Data focusing only on 2015. Once you’ve created your final dataset (it’s called full_ma_data in my code), answer the following:\n\nProvide a table of the count of plans under each plan type. Your table should look something like Table 1. (3 points)\n\n\n\n\n\nTable 1: Plan Count by Year\n\n\n\n\n\n\n\n2015\n\n\n\n\nType 1\n16\n\n\nType 2\n20\n\n\nType 3\n33\n\n\n\n\n\n\n\n\n\nRemove all special needs plans (SNP), employer group plans (eghp), and all “800-series” plans. Provide an updated version of Table 1 after making these exclusions. (3 points)",
+    "crumbs": [
+      "Assignments",
+      "Homework 1"
+    ]
   },
   {
     "objectID": "assignments/homework1.html#enrollment-data",
@@ -330,56 +342,88 @@
     "href": "assignments/homework5.html",
     "title": "Homework 5",
     "section": "",
-    "text": "In this assignment, you’ll recreate the Insurance and Medicaid Expansion data and answer a few questions along the way. As with the prior assignments, the first step is to make sure you have the Insurance Access repository and downloaded all of the raw data sources. Once you have the data downloaded and the code running, answer the following questions.\nThe due date for initial submission is 4/23, the revision due date is 4/28, and the final due date is the date of our final exam, 5/5."
+    "text": "In this assignment, you’ll recreate the Insurance and Medicaid Expansion data and answer a few questions along the way. As with the prior assignments, the first step is to make sure you have the Insurance Access repository and downloaded all of the raw data sources. Once you have the data downloaded and the code running, answer the following questions.\nThe due date for initial submission is 4/23, the revision due date is 4/28, and the final due date is the date of our final exam, 5/5.",
+    "crumbs": [
+      "Assignments",
+      "Homework 5"
+    ]
   },
   {
     "objectID": "assignments/homework5.html#instructions",
     "href": "assignments/homework5.html#instructions",
     "title": "Homework 5",
     "section": "",
-    "text": "In this assignment, you’ll recreate the Insurance and Medicaid Expansion data and answer a few questions along the way. As with the prior assignments, the first step is to make sure you have the Insurance Access repository and downloaded all of the raw data sources. Once you have the data downloaded and the code running, answer the following questions.\nThe due date for initial submission is 4/23, the revision due date is 4/28, and the final due date is the date of our final exam, 5/5."
+    "text": "In this assignment, you’ll recreate the Insurance and Medicaid Expansion data and answer a few questions along the way. As with the prior assignments, the first step is to make sure you have the Insurance Access repository and downloaded all of the raw data sources. Once you have the data downloaded and the code running, answer the following questions.\nThe due date for initial submission is 4/23, the revision due date is 4/28, and the final due date is the date of our final exam, 5/5.",
+    "crumbs": [
+      "Assignments",
+      "Homework 5"
+    ]
   },
   {
     "objectID": "assignments/homework5.html#summarize-the-data",
     "href": "assignments/homework5.html#summarize-the-data",
     "title": "Homework 5",
     "section": "Summarize the data",
-    "text": "Summarize the data\n\nPlot the share of the adult population with direct purchase health insurance over time.\nDiscuss the reduction in direct purchase health insurance in later years. Can you list a couple of policies that might have affected the success of the direct purchase insurance market?\nPlot the share of the adult population with Medicaid over time.\nPlot the share of uninsured over time, separately by states that expanded Medicaid in 2014 versus those that did not. Drop all states that expanded after 2014."
+    "text": "Summarize the data\n\nPlot the share of the adult population with direct purchase health insurance over time.\nDiscuss the reduction in direct purchase health insurance in later years. Can you list a couple of policies that might have affected the success of the direct purchase insurance market?\nPlot the share of the adult population with Medicaid over time.\nPlot the share of uninsured over time, separately by states that expanded Medicaid in 2014 versus those that did not. Drop all states that expanded after 2014.",
+    "crumbs": [
+      "Assignments",
+      "Homework 5"
+    ]
   },
   {
     "objectID": "assignments/homework5.html#estimate-ates",
     "href": "assignments/homework5.html#estimate-ates",
     "title": "Homework 5",
     "section": "Estimate ATEs",
-    "text": "Estimate ATEs\nFor the rest of the assignment, we’re going to apply the difference-in-differences estimator to the question of Medicaid expansion and uninsurance.\n\nCalculate the average percent of uninsured individuals in 2012 and 2015, separately for expansion and non-expansion states. Present your results in a basic 2x2 DD table.\nEstimate the effect of Medicaid expansion on the uninsurance rate using a standard DD regression estimator, again focusing only on states that expanded in 2014 versus those that never expanded.\nInclude state and year fixed effects in your estimates. Try using the lfe or fixest package to estimate this instead of directly including the fixed effects.\nRepeat the analysis in question 7 but include all states (even those that expanded after 2014). Are your results different? If so, why?\nProvide an “event study” graph showing the effects of Medicaid expansion in each year. Use the specification that includes state and year fixed effects, limited to states that expanded in 2014 or never expanded.\nRepeat part 9 but again include states that expanded after 2014. Note: this is tricky…you need to put all states onto “event time” to create this graph."
+    "text": "Estimate ATEs\nFor the rest of the assignment, we’re going to apply the difference-in-differences estimator to the question of Medicaid expansion and uninsurance.\n\nCalculate the average percent of uninsured individuals in 2012 and 2015, separately for expansion and non-expansion states. Present your results in a basic 2x2 DD table.\nEstimate the effect of Medicaid expansion on the uninsurance rate using a standard DD regression estimator, again focusing only on states that expanded in 2014 versus those that never expanded.\nInclude state and year fixed effects in your estimates. Try using the lfe or fixest package to estimate this instead of directly including the fixed effects.\nRepeat the analysis in question 7 but include all states (even those that expanded after 2014). Are your results different? If so, why?\nProvide an “event study” graph showing the effects of Medicaid expansion in each year. Use the specification that includes state and year fixed effects, limited to states that expanded in 2014 or never expanded.\nRepeat part 9 but again include states that expanded after 2014. Note: this is tricky…you need to put all states onto “event time” to create this graph.",
+    "crumbs": [
+      "Assignments",
+      "Homework 5"
+    ]
   },
   {
     "objectID": "assignments/homework3.html",
     "href": "assignments/homework3.html",
     "title": "Homework 3",
     "section": "",
-    "text": "In this assignment, you’ll recreate the CDC Tax Burden on Tobacco data and answer a few questions along the way. As with the last assignment, the first step is to make sure you’ve got the CDC Tax Burden on Tobacco repository and downloaded all of the raw data sources. Be sure to get the CPI data from the BLS as well, since we’ll be working with real dollar values. Once you have the data downloaded and the code running, answer the following questions.\nThe due date for initial submission is 3/17, the revision due date is 3/19, and the final due date is Friday, 3/21."
+    "text": "In this assignment, you’ll recreate the CDC Tax Burden on Tobacco data and answer a few questions along the way. As with the last assignment, the first step is to make sure you’ve got the CDC Tax Burden on Tobacco repository and downloaded all of the raw data sources. Be sure to get the CPI data from the BLS as well, since we’ll be working with real dollar values. Once you have the data downloaded and the code running, answer the following questions.\nThe due date for initial submission is 3/17, the revision due date is 3/19, and the final due date is Friday, 3/21.",
+    "crumbs": [
+      "Assignments",
+      "Homework 3"
+    ]
   },
   {
     "objectID": "assignments/homework3.html#instructions",
     "href": "assignments/homework3.html#instructions",
     "title": "Homework 3",
     "section": "",
-    "text": "In this assignment, you’ll recreate the CDC Tax Burden on Tobacco data and answer a few questions along the way. As with the last assignment, the first step is to make sure you’ve got the CDC Tax Burden on Tobacco repository and downloaded all of the raw data sources. Be sure to get the CPI data from the BLS as well, since we’ll be working with real dollar values. Once you have the data downloaded and the code running, answer the following questions.\nThe due date for initial submission is 3/17, the revision due date is 3/19, and the final due date is Friday, 3/21."
+    "text": "In this assignment, you’ll recreate the CDC Tax Burden on Tobacco data and answer a few questions along the way. As with the last assignment, the first step is to make sure you’ve got the CDC Tax Burden on Tobacco repository and downloaded all of the raw data sources. Be sure to get the CPI data from the BLS as well, since we’ll be working with real dollar values. Once you have the data downloaded and the code running, answer the following questions.\nThe due date for initial submission is 3/17, the revision due date is 3/19, and the final due date is Friday, 3/21.",
+    "crumbs": [
+      "Assignments",
+      "Homework 3"
+    ]
   },
   {
     "objectID": "assignments/homework3.html#summarize-the-data",
     "href": "assignments/homework3.html#summarize-the-data",
     "title": "Homework 3",
     "section": "Summarize the data",
-    "text": "Summarize the data\n\nPresent a bar graph showing the proportion of states with a change in their cigarette tax in each year from 1970 to 1985.\nPlot on a single graph the average tax (in 2012 dollars) on cigarettes and the average price of a pack of cigarettes from 1970 to 2018.\nIdentify the 5 states with the highest increases in cigarette prices (in dollars) over the time period. Plot the average number of packs sold per capita for those states from 1970 to 2018.\nIdentify the 5 states with the lowest increases in cigarette prices over the time period. Plot the average number of packs sold per capita for those states from 1970 to 2018.\nCompare the trends in sales from the 5 states with the highest price increases to those with the lowest price increases."
+    "text": "Summarize the data\n\nPresent a bar graph showing the proportion of states with a change in their cigarette tax in each year from 1970 to 1985.\nPlot on a single graph the average tax (in 2012 dollars) on cigarettes and the average price of a pack of cigarettes from 1970 to 2018.\nIdentify the 5 states with the highest increases in cigarette prices (in dollars) over the time period. Plot the average number of packs sold per capita for those states from 1970 to 2018.\nIdentify the 5 states with the lowest increases in cigarette prices over the time period. Plot the average number of packs sold per capita for those states from 1970 to 2018.\nCompare the trends in sales from the 5 states with the highest price increases to those with the lowest price increases.",
+    "crumbs": [
+      "Assignments",
+      "Homework 3"
+    ]
   },
   {
     "objectID": "assignments/homework3.html#estimate-ates",
     "href": "assignments/homework3.html#estimate-ates",
     "title": "Homework 3",
     "section": "Estimate ATEs",
-    "text": "Estimate ATEs\nNow let’s work on estimating a demand curve for cigarettes. Specifically, we’re going to estimate the price elasticity of demand for cigarettes. When explaining your findings, try to limit your discussion just to a couple of sentences.\n\nFocusing only on the time period from 1970 to 1990, regress log sales on log prices to estimate the price elasticity of demand over that period. Interpret your results.\nAgain limiting to 1970 to 1990, regress log sales on log prices using the total (federal and state) cigarette tax (in dollars) as an instrument for log prices. Interpret your results and compare your estimates to those without an instrument. Are they different? If so, why?\nShow the first stage and reduced-form results from the instrument.\nRepeat questions 1-3 focusing on the period from 1991 to 2015.\nCompare your elasticity estimates from 1970-1990 versus those from 1991-2015. Are they different? If so, why?"
+    "text": "Estimate ATEs\nNow let’s work on estimating a demand curve for cigarettes. Specifically, we’re going to estimate the price elasticity of demand for cigarettes. When explaining your findings, try to limit your discussion just to a couple of sentences.\n\nFocusing only on the time period from 1970 to 1990, regress log sales on log prices to estimate the price elasticity of demand over that period. Interpret your results.\nAgain limiting to 1970 to 1990, regress log sales on log prices using the total (federal and state) cigarette tax (in dollars) as an instrument for log prices. Interpret your results and compare your estimates to those without an instrument. Are they different? If so, why?\nShow the first stage and reduced-form results from the instrument.\nRepeat questions 1-3 focusing on the period from 1991 to 2015.\nCompare your elasticity estimates from 1970-1990 versus those from 1991-2015. Are they different? If so, why?",
+    "crumbs": [
+      "Assignments",
+      "Homework 3"
+    ]
   },
   {
     "objectID": "assignments/code-review.html",
@@ -680,28 +724,44 @@
     "href": "assignments/homework2.html",
     "title": "Homework 2",
     "section": "",
-    "text": "In this assignment, you’ll recreate the HCRIS data and answer a few questions along the way. The first step is to make sure you’re working with the HCRIS GitHub repository and downloaded all of the raw data sources. Once you have the data downloaded and the code running, answer the following questions. For more detailed instructions on how to submit your homework answers, please see the overview page here.\nThe due date for initial submission is 2/17, the revision due date is 2/19, and the final due date is Friday, 2/21."
+    "text": "In this assignment, you’ll recreate the HCRIS data and answer a few questions along the way. The first step is to make sure you’re working with the HCRIS GitHub repository and downloaded all of the raw data sources. Once you have the data downloaded and the code running, answer the following questions. For more detailed instructions on how to submit your homework answers, please see the overview page here.\nThe due date for initial submission is 2/17, the revision due date is 2/19, and the final due date is Friday, 2/21.",
+    "crumbs": [
+      "Assignments",
+      "Homework 2"
+    ]
   },
   {
     "objectID": "assignments/homework2.html#instructions",
     "href": "assignments/homework2.html#instructions",
     "title": "Homework 2",
     "section": "",
-    "text": "In this assignment, you’ll recreate the HCRIS data and answer a few questions along the way. The first step is to make sure you’re working with the HCRIS GitHub repository and downloaded all of the raw data sources. Once you have the data downloaded and the code running, answer the following questions. For more detailed instructions on how to submit your homework answers, please see the overview page here.\nThe due date for initial submission is 2/17, the revision due date is 2/19, and the final due date is Friday, 2/21."
+    "text": "In this assignment, you’ll recreate the HCRIS data and answer a few questions along the way. The first step is to make sure you’re working with the HCRIS GitHub repository and downloaded all of the raw data sources. Once you have the data downloaded and the code running, answer the following questions. For more detailed instructions on how to submit your homework answers, please see the overview page here.\nThe due date for initial submission is 2/17, the revision due date is 2/19, and the final due date is Friday, 2/21.",
+    "crumbs": [
+      "Assignments",
+      "Homework 2"
+    ]
   },
   {
     "objectID": "assignments/homework2.html#summarize-the-data",
     "href": "assignments/homework2.html#summarize-the-data",
     "title": "Homework 2",
     "section": "Summarize the data",
-    "text": "Summarize the data\n\nHow many hospitals filed more than one report in the same year? Show your answer as a line graph of the number of hospitals over time.\nAfter removing/combining multiple reports, how many unique hospital IDs (Medicare provider numbers) exist in the data?\nWhat is the distribution of total charges (tot_charges in the data) in each year? Show your results with a “violin” plot, with charges on the y-axis and years on the x-axis. For a nice tutorial on violin plots, look at Violin Plots with ggplot2.\nWhat is the distribution of estimated prices in each year? Again present your results with a violin plot, and recall our formula for estimating prices from class. Be sure to do something about outliers and/or negative prices in the data.\n\n\ndiscount_factor = 1-tot_discounts/tot_charges\nprice_num = (ip_charges + icu_charges + ancillary_charges)*discount_factor - tot_mcare_payment\nprice_denom = tot_discharges - mcare_discharges\nprice = price_num/price_denom"
+    "text": "Summarize the data\n\nHow many hospitals filed more than one report in the same year? Show your answer as a line graph of the number of hospitals over time.\nAfter removing/combining multiple reports, how many unique hospital IDs (Medicare provider numbers) exist in the data?\nWhat is the distribution of total charges (tot_charges in the data) in each year? Show your results with a “violin” plot, with charges on the y-axis and years on the x-axis. For a nice tutorial on violin plots, look at Violin Plots with ggplot2.\nWhat is the distribution of estimated prices in each year? Again present your results with a violin plot, and recall our formula for estimating prices from class. Be sure to do something about outliers and/or negative prices in the data.\n\n\ndiscount_factor = 1-tot_discounts/tot_charges\nprice_num = (ip_charges + icu_charges + ancillary_charges)*discount_factor - tot_mcare_payment\nprice_denom = tot_discharges - mcare_discharges\nprice = price_num/price_denom",
+    "crumbs": [
+      "Assignments",
+      "Homework 2"
+    ]
   },
   {
     "objectID": "assignments/homework2.html#estimate-ates",
     "href": "assignments/homework2.html#estimate-ates",
     "title": "Homework 2",
     "section": "Estimate ATEs",
-    "text": "Estimate ATEs\nFor the rest of the assignment, you should include only observations in 2012. So we are now dealing with cross-sectional data in which some hospitals are penalized and some are not. Please also define penalty as whether the sum of the HRRP and HVBP amounts are negative (i.e., a net penalty under the two programs). Code to do this is in the class slides.\n\nCalculate the average price among penalized versus non-penalized hospitals.\nSplit hospitals into quartiles based on bed size. To do this, create 4 new indicator variables, where each variable is set to 1 if the hospital’s bed size falls into the relevant quartile. Provide a table of the average price among treated/control groups for each quartile.\nFind the average treatment effect using each of the following estimators, and present your results in a single table:\n\nNearest neighbor matching (1-to-1) with inverse variance distance based on quartiles of bed size\nNearest neighbor matching (1-to-1) with Mahalanobis distance based on quartiles of bed size\nInverse propensity weighting, where the propensity scores are based on quartiles of bed size\nSimple linear regression, adjusting for quartiles of bed size using dummy variables and appropriate interactions as discussed in class\n\nWith these different treatment effect estimators, are the results similar, identical, very different?\nDo you think you’ve estimated a causal effect of the penalty? Why or why not? (just a couple of sentences)\nBriefly describe your experience working with these data (just a few sentences). Tell me one thing you learned and one thing that really aggravated or surprised you."
+    "text": "Estimate ATEs\nFor the rest of the assignment, you should include only observations in 2012. So we are now dealing with cross-sectional data in which some hospitals are penalized and some are not. Please also define penalty as whether the sum of the HRRP and HVBP amounts are negative (i.e., a net penalty under the two programs). Code to do this is in the class slides.\n\nCalculate the average price among penalized versus non-penalized hospitals.\nSplit hospitals into quartiles based on bed size. To do this, create 4 new indicator variables, where each variable is set to 1 if the hospital’s bed size falls into the relevant quartile. Provide a table of the average price among treated/control groups for each quartile.\nFind the average treatment effect using each of the following estimators, and present your results in a single table:\n\nNearest neighbor matching (1-to-1) with inverse variance distance based on quartiles of bed size\nNearest neighbor matching (1-to-1) with Mahalanobis distance based on quartiles of bed size\nInverse propensity weighting, where the propensity scores are based on quartiles of bed size\nSimple linear regression, adjusting for quartiles of bed size using dummy variables and appropriate interactions as discussed in class\n\nWith these different treatment effect estimators, are the results similar, identical, very different?\nDo you think you’ve estimated a causal effect of the penalty? Why or why not? (just a couple of sentences)\nBriefly describe your experience working with these data (just a few sentences). Tell me one thing you learned and one thing that really aggravated or surprised you.",
+    "crumbs": [
+      "Assignments",
+      "Homework 2"
+    ]
   },
   {
     "objectID": "index.html#instructor",
@@ -722,6 +782,10 @@
     "href": "assignments/homework1.html#setup",
     "title": "Homework 1",
     "section": "Setup",
-    "text": "Setup\nThe first half of this assignment is entirely about version control in Git, setting up your GitHub respository, committing and pushing changes to your GitHub respository, and organizing your project folders. These steps are worth 9 points at each submission stage."
+    "text": "Setup\nThe first half of this assignment is entirely about version control in Git, setting up your GitHub respository, committing and pushing changes to your GitHub respository, and organizing your project folders. These steps are worth 9 points at each submission stage. Once you have your software setup complete, move on to the next part of the assignment.",
+    "crumbs": [
+      "Assignments",
+      "Homework 1"
+    ]
   }
 ]
