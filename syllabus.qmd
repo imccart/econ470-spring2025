@@ -71,6 +71,13 @@ While we call these "office hours" they really should be "student hours". These 
 
 For any questions that you don't think need a meeting, you can always reach out to me through email. I do my best to respond within 24 hours to all emails.
 
+### Teaching Assistant
+
+We have an excellent economics PhD student as our teaching assistant this year. They will be available to help with any questions you have about the material, assignments, or anything else. They will also be grading your assignments. Please be nice. They are here to help you.
+
+  - **Pablo Estrada**: Office hours, T/Th, 3-4pm. Email, pablo.estrada@emory.edu. Pablo will hold all of his office hours virtually, and a link to hiz zoom meeting room is available on Canvas.
+
+
 ### Turning things in
 All assignments should be submitted as PDFs in GradeScope, along with a link to a GitHub repository.
 
