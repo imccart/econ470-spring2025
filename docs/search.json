@@ -324,7 +324,7 @@
     "href": "schedule/class-01.html#for-next-class",
     "title": "Class 1: Introduction and Setup",
     "section": "For next class",
-    "text": "For next class\nI’ll use R for this class, and I’ll use Visual Studio Code as my text editor. I’ll also use Git for version control. If you’re not familiar with these tools, don’t worry. We’ll go over them in class. For next class, please do the following:\n\nDownload R\nDownload Visual Studio Code\nDownload Git\nDownload Quarto if you want to use it\nCreate a account on GitHub"
+    "text": "For next class\nI’ll use R for this class, and I’ll use Visual Studio Code as my text editor. I’ll also use Git for version control. If you’re not familiar with these tools, don’t worry. We’ll go over them in class. For next class, please do the following:\n\nDownload R and/or Python (be sure to select the Add to PATH option when installing Python)\nDownload Visual Studio Code\nDownload Git\nDownload Quarto if you want to use it\nCreate a account on GitHub\nDownload GitHub Desktop\nInstall relevant extensions in VS Code and select proper Python interpreter"
   },
   {
     "objectID": "assignments/participation.html",
@@ -528,14 +528,14 @@
     "href": "schedule/class-02.html",
     "title": "Class 2: Software Setup",
     "section": "",
-    "text": "Today, we’ll make sure we’re all set up up with R, Git, GitHub, and VS Code. We’ll also review some basic R concepts and get started with Git and VS Code."
+    "text": "Today, we’ll make sure we’re all set up up with R or Python, Git, GitHub, GitHub Desktop, and VS Code. We’ll also review some basic data management concepts and get started with Git and VS Code."
   },
   {
     "objectID": "schedule/class-02.html#objectives",
     "href": "schedule/class-02.html#objectives",
     "title": "Class 2: Software Setup",
     "section": "Objectives",
-    "text": "Objectives\n\nSet up VS Code with R and Git. For some basic instructions, see R in VS Code and Git in VS Code\nSet up SSH keys for communication with GitHub. Some tips available here.\nCreate your first repository\nReview data manipulation in R using the tidyverse"
+    "text": "Objectives\n\nSet up VS Code with R and Git. For some basic instructions, see R in VS Code and Git in VS Code\nSet up SSH keys for communication with GitHub. Some tips available here.\nCreate your first repository and link to local directory under version control with Git\nReview common data manipulation concepts and techniques"
   },
   {
     "objectID": "schedule/class-06.html",
