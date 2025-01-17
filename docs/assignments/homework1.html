@@ -103,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../syllabus.html"> 
-<span class="menu-text">Econ/HLTH 470: Spring 2025 Syllabus</span></a>
+<span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../schedule/index.html"> 
@@ -242,8 +242,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="building-the-data" class="level2">
 <h2 class="anchored" data-anchor-id="building-the-data">Building the data</h2>
-<p>Most of your professional lives will likely involve managing data. It can be tedious but also extremely rewarding when you finally get to find out what’s going on in the analysis stage. Anyway, let’s get to work! All of these questions require you to use the <a href="https://github.com/imccart/ma-class">Medicare Advantage GitHub Repo</a>.</p>
-<p>Specifically, we need to organize the <a href="https://github.com/imccart/ma-class/blob/main/data-code/1_Plan_Data.R">Monthly Plan Enrollment Data</a> focusing only on 2015. Once you’ve created your final dataset (it’s called <em>full_ma_data</em> in my code), answer the following:</p>
+<p>Most of your professional lives will likely involve managing data. It can be tedious but also extremely rewarding when you finally get to find out what’s going on in the analysis stage. Anyway, let’s get to work! For this homework, you should first take a look at our <a href="https://github.com/imccart/ma-class">Medicare Advantage GitHub Repo</a>. This repo has a lot more than we need for this first homework assignment, but it provides a general overview of the data. If you’re working from the code files in this repo, you’ll need to make some simplifications to address the specific questions below.</p>
+<p>All we need to do for this first homework assignment is organize the <a href="https://github.com/imccart/ma-class/blob/main/data-code/1_Plan_Data.R">Monthly Plan Enrollment Data</a> and focus specifically on 2015. Note that these data are monthly, so you’ll need to either select a given month of data to work with or combine all of the months and collapse to a single plan-county-year. Once you’ve created this dataset, answer the following:</p>
 <ol type="1">
 <li>Provide a table of the count of plans under each plan type. Your table should look something like <a href="#tbl-extable" class="quarto-xref">Table&nbsp;1</a>. (3 points)</li>
 </ol>
@@ -265,15 +265,15 @@ Table&nbsp;1: Plan Count by Year
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Type 1</td>
-<td style="text-align: right;">16</td>
+<td style="text-align: right;">19</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Type 2</td>
-<td style="text-align: right;">20</td>
+<td style="text-align: right;">23</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Type 3</td>
-<td style="text-align: right;">33</td>
+<td style="text-align: right;">17</td>
 </tr>
 </tbody>
 </table>

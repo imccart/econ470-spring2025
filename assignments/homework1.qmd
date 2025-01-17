@@ -14,9 +14,9 @@ The first half of this assignment is entirely about version control in Git, sett
 
 
 ## Building the data
-Most of your professional lives will likely involve managing data. It can be tedious but also extremely rewarding when you finally get to find out what's going on in the analysis stage. Anyway, let's get to work! All of these questions require you to use the [Medicare Advantage GitHub Repo](https://github.com/imccart/ma-class).
+Most of your professional lives will likely involve managing data. It can be tedious but also extremely rewarding when you finally get to find out what's going on in the analysis stage. Anyway, let's get to work! For this homework, you should first take a look at our [Medicare Advantage GitHub Repo](https://github.com/imccart/ma-class). This repo has a lot more than we need for this first homework assignment, but it provides a general overview of the data. If you're working from the code files in this repo, you'll need to make some simplifications to address the specific questions below.
 
-Specifically, we need to organize the [Monthly Plan Enrollment Data](https://github.com/imccart/ma-class/blob/main/data-code/1_Plan_Data.R) focusing only on 2015. Once you've created your final dataset (it's called *full_ma_data* in my code), answer the following:
+All we need to do for this first homework assignment is organize the [Monthly Plan Enrollment Data](https://github.com/imccart/ma-class/blob/main/data-code/1_Plan_Data.R) and focus specifically on 2015. Note that these data are monthly, so you'll need to either select a given month of data to work with or combine all of the months and collapse to a single plan-county-year. Once you've created this dataset, answer the following:
 
 1. Provide a table of the count of plans under each plan type. Your table should look something like @tbl-extable. (3 points)
 
