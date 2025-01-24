@@ -303,7 +303,7 @@
     "href": "schedule/class-03.html#activities",
     "title": "Class 3: Introduction to Causal Inference",
     "section": "Activities",
-    "text": "Activities\n\nFinalize software setup\nConfirm ability to commit and push changes to GitHub\nCreate your own Medicare Advantage repository and begin working with data. Some specific steps…\n\nCreate an SSH key on your computer and pair with GitHub\nCreate GitHub repository\nClone to your local computer\nCreate folder structure (check Assignments Page for more detail)\nDownload data from OneDrive (check link on Canvas) and move to data/input folder\nDownload code from the GitHub repository for the assignment and move to data-code folder"
+    "text": "Activities\n\nFinalize software setup\nConfirm ability to commit and push changes to GitHub\nCreate your own Medicare Advantage repository and begin working with data for homework 1"
   },
   {
     "objectID": "schedule/class-01.html",

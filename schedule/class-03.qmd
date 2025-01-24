@@ -1,5 +1,6 @@
 ---
 title: "Class 3: Introduction to Causal Inference"
+date: 2025-01-24
 ---
 
 Today we'll introduce the potential outcomes framework. We'll discuss what this means and what we'll seek to estimate going forward.
@@ -12,10 +13,4 @@ Today we'll introduce the potential outcomes framework. We'll discuss what this 
 ## Activities
 - Finalize software setup
 - Confirm ability to commit and push changes to GitHub
-- Create your own [Medicare Advantage repository](https://github.com/imccart/ma-class) and begin working with data. Some specific steps...
-    1. Create an SSH key on your computer and pair with GitHub
-    2. Create GitHub repository
-    3. Clone to your local computer
-    4. Create folder structure (check [Assignments Page](/assignment/) for more detail)
-    5. Download data from OneDrive (check link on Canvas) and move to `data/input` folder
-    6. Download code from the GitHub repository for the assignment and move to `data-code` folder
+- Create your own [Medicare Advantage repository](https://github.com/imccart/ma-class) and begin working with data for homework 1
