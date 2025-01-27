@@ -8,7 +8,7 @@
 
 <meta name="description" content="Course on Research Methods with Health Care Applications at Emory University">
 
-<title>Class 19: Medicare Advantage Data – Research in Health Economics</title>
+<title>Class 19: Regression Discontinuity Part I – Research in Health Economics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,6 +39,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,12 +70,12 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Class 19: Medicare Advantage Data – Research in Health Economics">
+<meta property="og:title" content="Class 19: Regression Discontinuity Part I – Research in Health Economics">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://econ470s25.classes.ianmccarthyecon.com//files/social-image-f22.png">
 <meta property="og:site_name" content="Research in Health Economics">
 <meta property="og:locale" content="en_US">
-<meta name="twitter:title" content="Class 19: Medicare Advantage Data – Research in Health Economics">
+<meta name="twitter:title" content="Class 19: Regression Discontinuity Part I – Research in Health Economics">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://econ470s25.classes.ianmccarthyecon.com//files/social-image-f22.png">
 <meta name="twitter:creator" content="@ianhealthecon">
@@ -144,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Class 19: Medicare Advantage Data</h1>
+<h1 class="title">Class 19: Regression Discontinuity Part I</h1>
 </div>
 
 
@@ -161,19 +163,20 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Today we’ll revisit the MA data from Module 0. We’ll also introduce data on the MA quality rating program and how it plays out in real life.</p>
+<p>We’ll begin implementing an RD with simulated data. We’ll discuss the basics of the RD identification strategy, its implementation, and some details including bin and bandwidth selection.</p>
 <section id="objectives" class="level2">
 <h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
 <ul>
-<li>Understand the MA data and datasets required for this Module</li>
-<li>Explain the MA star rating program and how the star ratings are calculated</li>
-<li>Explain the MA quality improvement program</li>
+<li>Describe the intuition underlying the RD identification strategy</li>
+<li>Implement an RD strategy with simulated data</li>
+<li>Explain optimal bandwidth and bin width selection</li>
 </ul>
 </section>
 <section id="activities" class="level2">
 <h2 class="anchored" data-anchor-id="activities">Activities</h2>
 <ul>
-<li>Clone the <a href="https://github.com/imccart/ma-class">Medicare Advantage</a> repository (if you haven’t already) and begin working with data.</li>
+<li>Clone the <a href="https://github.com/imccart/ma-class">Medicare Advantage</a> repository (if you haven’t already) and begin working with data</li>
+<li>Implement RD design with simulated data in R</li>
 </ul>
 
 
@@ -604,13 +607,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Content {{&lt; fa brands creative-commons &gt;}} 2025 by Ian McCarthy<br> All content licensed under a {{&lt; fa brands creative-commons &gt;}} {{&lt; fa brands creative-commons-by &gt;}} {{&lt; fa brands creative-commons-nc &gt;}} <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)</a></p>
+<p>Content <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> 2025 by Ian McCarthy<br> All content licensed under a <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-nc" aria-label="creative-commons-nc"></i> <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Made with {{&lt; fa brands r-project &gt;}} and <a href="https://quarto.org/">Quarto</a><br> <a href="https://github.com/imccart/econ470-spring2024">View the source at {{&lt; fa brands github &gt;}} GitHub</a></p>
+<p>Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a><br> <a href="https://github.com/imccart/econ470-spring2024">View the source at <i class="fa-brands fa-github" aria-label="github"></i> GitHub</a></p>
 </div>
   </div>
 </footer>

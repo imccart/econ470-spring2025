@@ -1,14 +1,18 @@
 ---
-title: "Class 13: Data on Smoking and Cigarette Prices"
+title: "Class 13: Instrumental Variables Part I"
 ---
 
-Today we'll discuss demand estimation in the context of smoking. We'll also introduce the idea of instrumental variables as a way to estimate causal effects when confronted with selection on unobservables.
+Today we'll formally introduce instrumental variables and discuss some of the thorny issues associated with IV in practice (namely, testing for instrument validity and interpreting the results).
+
 
 ## Objectives
-- Understand CDC and tax data sources
-- Introduce the idea of instrumental variables
+
+- Understand the concept of instrumental variables and how they can be used to estimate causal effects
+- List and explain the key assumptions for a "good" instrument
+- Define and explain a local average treatment effect
+
 
 ## Activities 
-- Begin working with CDC Tax Burden data
-- Derive initial instrumental variables estimate
-- Define and explain the instrumental variable estimate as a ratio of a "reduced-form" to a "first-stage" estimate
+
+- Continue work with the [CDC Tax Burden on Tobacco](https://github.com/imccart/CDC-Tobacco) data
+- Data simulation and practical issues with IV

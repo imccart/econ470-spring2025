@@ -8,7 +8,7 @@
 
 <meta name="description" content="Course on Research Methods with Health Care Applications at Emory University">
 
-<title>Class 7: Selection on Observables – Research in Health Economics</title>
+<title>Class 17: Medicare Advantage and Quality Reporting – Research in Health Economics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -70,12 +90,12 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Class 7: Selection on Observables – Research in Health Economics">
+<meta property="og:title" content="Class 17: Medicare Advantage and Quality Reporting – Research in Health Economics">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://econ470s25.classes.ianmccarthyecon.com//files/social-image-f22.png">
 <meta property="og:site_name" content="Research in Health Economics">
 <meta property="og:locale" content="en_US">
-<meta name="twitter:title" content="Class 7: Selection on Observables – Research in Health Economics">
+<meta name="twitter:title" content="Class 17: Medicare Advantage and Quality Reporting – Research in Health Economics">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://econ470s25.classes.ianmccarthyecon.com//files/social-image-f22.png">
 <meta name="twitter:creator" content="@ianhealthecon">
@@ -136,7 +156,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
+  <li><a href="#readings-and-other-links" id="toc-readings-and-other-links" class="nav-link active" data-scroll-target="#readings-and-other-links">Readings and other links</a></li>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
   <li><a href="#activities" id="toc-activities" class="nav-link" data-scroll-target="#activities">Activities</a></li>
   </ul>
 </nav>
@@ -146,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Class 7: Selection on Observables</h1>
+<h1 class="title">Class 17: Medicare Advantage and Quality Reporting</h1>
 </div>
 
 
@@ -163,26 +184,57 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This class begins our first attempt to estimate a causal treatment effect. We’ll do so with a few approaches, all of which rely on the combination of a “selection on observables” or “conditional independence” assumption, along with a “common support” assumption.</p>
+<p>The goal of this module is to understand regression discontinuity as a causal identification strategy. We’ll do this in the context of Medicare Advantage quality ratings, where we’ll estimate the effect of higher quality ratings on enrollments. Similar to the prior module, we’ll use RD as a way to avoid problems of endogeneity of ratings.</p>
+<section id="readings-and-other-links" class="level2">
+<h2 class="anchored" data-anchor-id="readings-and-other-links">Readings and other links</h2>
+<p>Links to papers are listed alongside the full reference. PDFs of each paper are also available on <strong>Canvas</strong>.</p>
+<ul>
+<li><i class="fas fa-book"></i> Required readings for this module:
+<ul>
+<li>Chapter 6 of <a href="https://mixtape.scunning.com/">Causal Inference: The Mixtape</a></li>
+<li>Chapter 20 of <a href="https://theeffectbook.net/">The Effect: An Introduction to Research Design and Causality</a></li>
+</ul></li>
+<li><i class="fas fa-external-link-square-alt"></i> Supplemental information and readings:
+<ul>
+<li>Chapter 6 of <span class="citation" data-cites="angrist2009">(<a href="#ref-angrist2009" role="doc-biblioref">Angrist and Pischke 2009</a>)</span></li>
+<li><span class="citation" data-cites="darden2015">(<a href="#ref-darden2015" role="doc-biblioref">Darden and McCarthy 2015</a>)</span></li>
+<li><span class="citation" data-cites="gruber2017">(<a href="#ref-gruber2017" role="doc-biblioref">Gruber 2017</a>)</span><br>
+</li>
+</ul></li>
+<li><i class="fa fa-database"></i> Data for this module:
+<ul>
+<li><a href="https://github.com/imccart/ma-class">Medicare Advantage</a> repository</li>
+</ul></li>
+</ul>
+</section>
 <section id="objectives" class="level2">
 <h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
 <ul>
-<li>Understand and explain the differences between matching and re-weighting</li>
-<li>Explain the implicit weighting in OLS regression and how to avoid such weighting</li>
-<li>Calculate an ATE or ATT using regression, matching, and weighting</li>
+<li>Explain some of the history and institutional details of Medicare Advantage</li>
+<li>Understand the role of quality ratings on insurance plan choice</li>
 </ul>
 </section>
 <section id="activities" class="level2">
 <h2 class="anchored" data-anchor-id="activities">Activities</h2>
 <ul>
-<li>Continue working with the <a href="https://github.com/imccart/hcris-class">Hospital Cost Report Information System (HCRIS)</a> repository.</li>
-<li>Estimate treatment effects with simulated data, using matching, regression, and re-weighting. The code file for in-class simulated data is available <a href="https://imccart.github.io/econ470-content/01-hospital-pricing/in-class-code.R">here</a></li>
+<li>Review homework 3 and IV in practice</li>
 </ul>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-angrist2009" class="csl-entry" role="listitem">
+Angrist, J., and J. Pischke. 2009. <em>Mostly <span>Harmless</span> <span>Econometrics</span></em>. Princeton, NJ: Princeton University Press.
+</div>
+<div id="ref-darden2015" class="csl-entry" role="listitem">
+Darden, M., and I. McCarthy. 2015. <span>“The <span>Star</span> <span>Treatment</span>: <span>Estimating</span> the <span>Impact</span> of <span>Star</span> <span>Ratings</span> on <span>Medicare</span> <span>Advantage</span> <span>Enrollments</span>.”</span> <em>Journal of Human Resources</em> 50 (4): 980–1008.
+</div>
+<div id="ref-gruber2017" class="csl-entry" role="listitem">
+Gruber, Jonathan. 2017. <span>“Delivering Public Health Insurance Through Private Plan Choice in the <span>United</span> <span>States</span>.”</span> <em>Journal of Economic Perspectives</em> 31 (4): 3–22.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

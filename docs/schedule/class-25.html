@@ -8,7 +8,7 @@
 
 <meta name="description" content="Course on Research Methods with Health Care Applications at Emory University">
 
-<title>Class 25: Introduction to Difference-in-Differences – Research in Health Economics</title>
+<title>Class 25: Difference-in-Differences in Practice – Research in Health Economics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,6 +39,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,12 +70,12 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Class 25: Introduction to Difference-in-Differences – Research in Health Economics">
+<meta property="og:title" content="Class 25: Difference-in-Differences in Practice – Research in Health Economics">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://econ470s25.classes.ianmccarthyecon.com//files/social-image-f22.png">
 <meta property="og:site_name" content="Research in Health Economics">
 <meta property="og:locale" content="en_US">
-<meta name="twitter:title" content="Class 25: Introduction to Difference-in-Differences – Research in Health Economics">
+<meta name="twitter:title" content="Class 25: Difference-in-Differences in Practice – Research in Health Economics">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://econ470s25.classes.ianmccarthyecon.com//files/social-image-f22.png">
 <meta name="twitter:creator" content="@ianhealthecon">
@@ -144,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Class 25: Introduction to Difference-in-Differences</h1>
+<h1 class="title">Class 25: Difference-in-Differences in Practice</h1>
 </div>
 
 
@@ -161,18 +163,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The goal of Part 2 of this module is to introduce the difference-in-differences identification strategy and begin to implement this strategy with simulated data.</p>
+<p>The goal for today is to examine how to use a DD strategy with real-life data and discuss some current issues with the implementation of DD designs in practice</p>
 <section id="objectives" class="level2">
 <h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
 <ul>
-<li>Describe the basics of panel data and fixed effects</li>
-<li>Describe the DD research design</li>
+<li>Understand and explain some of the difficulties when interpreting the results of regression-based DD estimates</li>
+<li>Be aware of alternative estimators that may be applicable in some settings</li>
 </ul>
 </section>
 <section id="activities" class="level2">
 <h2 class="anchored" data-anchor-id="activities">Activities</h2>
 <ul>
-<li>Implement DD using simple averages and in a regression context</li>
+<li>Estimate an event study with constant treatment timing</li>
+<li>Estimate an event study with differential treatment timing</li>
 </ul>
 
 
@@ -603,13 +606,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Content {{&lt; fa brands creative-commons &gt;}} 2025 by Ian McCarthy<br> All content licensed under a {{&lt; fa brands creative-commons &gt;}} {{&lt; fa brands creative-commons-by &gt;}} {{&lt; fa brands creative-commons-nc &gt;}} <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)</a></p>
+<p>Content <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> 2025 by Ian McCarthy<br> All content licensed under a <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-nc" aria-label="creative-commons-nc"></i> <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Made with {{&lt; fa brands r-project &gt;}} and <a href="https://quarto.org/">Quarto</a><br> <a href="https://github.com/imccart/econ470-spring2024">View the source at {{&lt; fa brands github &gt;}} GitHub</a></p>
+<p>Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a><br> <a href="https://github.com/imccart/econ470-spring2024">View the source at <i class="fa-brands fa-github" aria-label="github"></i> GitHub</a></p>
 </div>
   </div>
 </footer>

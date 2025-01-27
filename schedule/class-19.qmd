@@ -1,16 +1,17 @@
 ---
-title: "Class 19: Medicare Advantage Data"
+title: "Class 19: Regression Discontinuity Part I"
 ---
 
-Today we'll revisit the MA data from Module 0. We'll also introduce data on the MA quality rating program and how it plays out in real life.
+We'll begin implementing an RD with simulated data. We'll discuss the basics of the RD identification strategy, its implementation, and some details including bin and bandwidth selection.
 
 ## Objectives
 
-- Understand the MA data and datasets required for this Module
-- Explain the MA star rating program and how the star ratings are calculated
-- Explain the MA quality improvement program
+- Describe the intuition underlying the RD identification strategy
+- Implement an RD strategy with simulated data
+- Explain optimal bandwidth and bin width selection
 
 
 ## Activities 
 
-- Clone the [Medicare Advantage](https://github.com/imccart/ma-class) repository (if you haven't already) and begin working with data.
+- Clone the [Medicare Advantage](https://github.com/imccart/ma-class) repository (if you haven't already) and begin working with data
+- Implement RD design with simulated data in R

@@ -1,17 +1,14 @@
 ---
-title: "Class 7: HCRIS Data"
+title: "Class 7: Selection on Observables"
 ---
 
-In this class, we'll discuss the Hospital Cost Report Information System (HCRIS) data and how to use these data to estimate hospital prices.
+This class begins our first attempt to estimate a causal treatment effect. We'll do so with a few approaches, all of which rely on the combination of a "selection on observables" or "conditional independence" assumption, along with a "common support" assumption.
 
 ## Objectives
-
-- Understand the nature of hospital pricing
-- Explain HCRIS data, how the data are generated, and how the data can be used to estimate a hospital's "price"
-
+- Understand and explain the differences between matching and re-weighting
+- Explain the implicit weighting in OLS regression and how to avoid such weighting
+- Calculate an ATE or ATT using regression, matching, and weighting
 
 ## Activities 
-
-- Clone [Hospital Cost Report Information System (HCRIS)](https://github.com/imccart/hcris-class) repository and begin working with data. See also a similar repository [here](https://github.com/asacarny/hospital-cost-reports) from [Adam Sacarny](http://sacarny.com/)
-
-
+- Continue working with the [Hospital Cost Report Information System (HCRIS)](https://github.com/imccart/hcris-class) repository.
+- Estimate treatment effects with simulated data, using matching, regression, and re-weighting. The code file for in-class simulated data is available [here](https://imccart.github.io/econ470-content/01-hospital-pricing/in-class-code.R)

@@ -8,7 +8,7 @@
 
 <meta name="description" content="Course on Research Methods with Health Care Applications at Emory University">
 
-<title>Class 8: Selection on Observables – Research in Health Economics</title>
+<title>Class 8: Selection on Observables in Practice – Research in Health Economics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,6 +39,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,12 +70,12 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Class 8: Selection on Observables – Research in Health Economics">
+<meta property="og:title" content="Class 8: Selection on Observables in Practice – Research in Health Economics">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://econ470s25.classes.ianmccarthyecon.com//files/social-image-f22.png">
 <meta property="og:site_name" content="Research in Health Economics">
 <meta property="og:locale" content="en_US">
-<meta name="twitter:title" content="Class 8: Selection on Observables – Research in Health Economics">
+<meta name="twitter:title" content="Class 8: Selection on Observables in Practice – Research in Health Economics">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://econ470s25.classes.ianmccarthyecon.com//files/social-image-f22.png">
 <meta name="twitter:creator" content="@ianhealthecon">
@@ -144,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Class 8: Selection on Observables</h1>
+<h1 class="title">Class 8: Selection on Observables in Practice</h1>
 </div>
 
 
@@ -161,20 +163,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This class begins our first attempt to estimate a causal treatment effect. We’ll do so with a few approaches, all of which rely on the combination of a “selection on observables” or “conditional independence” assumption, along with a “common support” assumption.</p>
+<p>Today we’ll continue our work with matching, reweighting, and regression, but in the context of real life data on hospital prices.</p>
 <section id="objectives" class="level2">
 <h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
 <ul>
-<li>Understand and explain the differences between matching and re-weighting</li>
-<li>Explain the implicit weighting in OLS regression and how to avoid such weighting</li>
-<li>Calculate an ATE or ATT using regression, matching, and weighting</li>
+<li>Understand HCRIS data and explain hospital pricing</li>
+<li>Calculate an ATE or ATT using regression, matching, and weighting using real-world pricing data</li>
 </ul>
 </section>
 <section id="activities" class="level2">
 <h2 class="anchored" data-anchor-id="activities">Activities</h2>
 <ul>
 <li>Continue working with the <a href="https://github.com/imccart/hcris-class">Hospital Cost Report Information System (HCRIS)</a> repository.</li>
-<li>Estimate treatment effects with simulated data, using matching, regression, and re-weighting. The code file for in-class simulated data is available <a href="https://imccart.github.io/econ470-content/01-hospital-pricing/in-class-code.R">here</a></li>
+<li>Estimate the effect of hospital penalties on hospital pricing</li>
 </ul>
 
 
@@ -605,13 +606,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Content {{&lt; fa brands creative-commons &gt;}} 2025 by Ian McCarthy<br> All content licensed under a {{&lt; fa brands creative-commons &gt;}} {{&lt; fa brands creative-commons-by &gt;}} {{&lt; fa brands creative-commons-nc &gt;}} <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)</a></p>
+<p>Content <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> 2025 by Ian McCarthy<br> All content licensed under a <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-nc" aria-label="creative-commons-nc"></i> <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Made with {{&lt; fa brands r-project &gt;}} and <a href="https://quarto.org/">Quarto</a><br> <a href="https://github.com/imccart/econ470-spring2024">View the source at {{&lt; fa brands github &gt;}} GitHub</a></p>
+<p>Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a><br> <a href="https://github.com/imccart/econ470-spring2024">View the source at <i class="fa-brands fa-github" aria-label="github"></i> GitHub</a></p>
 </div>
   </div>
 </footer>

@@ -8,7 +8,7 @@
 
 <meta name="description" content="Course on Research Methods with Health Care Applications at Emory University">
 
-<title>Class 24: Medicaid Expansion and Uninsurance – Research in Health Economics</title>
+<title>Class 24: Introduction to Difference-in-Differences – Research in Health Economics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +21,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -59,6 +39,8 @@ div.csl-indent {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -88,12 +70,12 @@ div.csl-indent {
 }</script>
 
 
-<meta property="og:title" content="Class 24: Medicaid Expansion and Uninsurance – Research in Health Economics">
+<meta property="og:title" content="Class 24: Introduction to Difference-in-Differences – Research in Health Economics">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://econ470s25.classes.ianmccarthyecon.com//files/social-image-f22.png">
 <meta property="og:site_name" content="Research in Health Economics">
 <meta property="og:locale" content="en_US">
-<meta name="twitter:title" content="Class 24: Medicaid Expansion and Uninsurance – Research in Health Economics">
+<meta name="twitter:title" content="Class 24: Introduction to Difference-in-Differences – Research in Health Economics">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://econ470s25.classes.ianmccarthyecon.com//files/social-image-f22.png">
 <meta name="twitter:creator" content="@ianhealthecon">
@@ -154,8 +136,7 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#readings-and-other-links" id="toc-readings-and-other-links" class="nav-link active" data-scroll-target="#readings-and-other-links">Readings and other links</a></li>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
   <li><a href="#activities" id="toc-activities" class="nav-link" data-scroll-target="#activities">Activities</a></li>
   </ul>
 </nav>
@@ -165,7 +146,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Class 24: Medicaid Expansion and Uninsurance</h1>
+<h1 class="title">Class 24: Introduction to Difference-in-Differences</h1>
 </div>
 
 
@@ -182,60 +163,24 @@ div.csl-indent {
 </header>
 
 
-<p>The goal of this module is to understand difference-in-differences as a causal identification strategy. We’ll do this in the context of Medicaid expansion and its effect on uninsurance.</p>
-<section id="readings-and-other-links" class="level2">
-<h2 class="anchored" data-anchor-id="readings-and-other-links">Readings and other links</h2>
-<p>Links to papers are listed alongside the full reference</p>
-<ul>
-<li><i class="fas fa-book"></i> Required readings for this module:
-<ul>
-<li>Chapters 8-9 of <a href="https://mixtape.scunning.com/">Causal Inference: The Mixtape</a></li>
-<li>Chapters 16-18 of <a href="https://theeffectbook.net/">The Effect: An Introduction to Research Design and Causality</a></li>
-</ul></li>
-<li><i class="fas fa-external-link-square-alt"></i> Supplemental information and readings:
-<ul>
-<li>Chapter 5 of <span class="citation" data-cites="angrist2009">(<a href="#ref-angrist2009" role="doc-biblioref">Angrist and Pischke 2009</a>)</span></li>
-<li><span class="citation" data-cites="courtemanche2017">(<a href="#ref-courtemanche2017" role="doc-biblioref">Courtemanche et al. 2017</a>)</span></li>
-<li><span class="citation" data-cites="obama2016">(<a href="#ref-obama2016" role="doc-biblioref">Obama 2016</a>)</span><br>
-</li>
-</ul></li>
-<li><i class="fa fa-database"></i> Data for this module:
-<ul>
-<li><a href="https://github.com/imccart-test/insurance-access">Insurance Access and Medicaid Expansion</a> repository</li>
-</ul></li>
-</ul>
-</section>
+<p>The goal of Part 2 of this module is to introduce the difference-in-differences identification strategy and begin to implement this strategy with simulated data.</p>
 <section id="objectives" class="level2">
 <h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
 <ul>
-<li>Understand some of the large changes introduced by the Affordable Care Act</li>
-<li>Explain what we mean by “Medicaid expansion”</li>
-<li>Understand the ACS data and how to access the data in R</li>
+<li>Describe the basics of panel data and fixed effects</li>
+<li>Describe the DD research design</li>
 </ul>
 </section>
 <section id="activities" class="level2">
 <h2 class="anchored" data-anchor-id="activities">Activities</h2>
 <ul>
-<li>Review homework 4 and RD in practice</li>
-<li>Import ACS data via API in R</li>
-<li>Summarize insurance status over time</li>
+<li>Implement DD using simple averages and in a regression context</li>
 </ul>
-
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-angrist2009" class="csl-entry" role="listitem">
-Angrist, J., and J. Pischke. 2009. <em>Mostly <span>Harmless</span> <span>Econometrics</span></em>. Princeton, NJ: Princeton University Press.
-</div>
-<div id="ref-courtemanche2017" class="csl-entry" role="listitem">
-Courtemanche, Charles, James Marton, Benjamin Ukert, Aaron Yelowitz, and Daniela Zapata. 2017. <span>“Early Impacts of the <span>Affordable</span> <span>Care</span> <span>Act</span> on Health Insurance Coverage in <span>Medicaid</span> Expansion and Non-Expansion States.”</span> <em>Journal of Policy Analysis and Management</em> 36 (1): 178–210.
-</div>
-<div id="ref-obama2016" class="csl-entry" role="listitem">
-Obama, Barack. 2016. <span>“United <span>States</span> Health Care Reform: Progress to Date and Next Steps.”</span> <em>Jama</em> 316 (5): 525–32.
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -660,13 +605,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Content {{&lt; fa brands creative-commons &gt;}} 2025 by Ian McCarthy<br> All content licensed under a {{&lt; fa brands creative-commons &gt;}} {{&lt; fa brands creative-commons-by &gt;}} {{&lt; fa brands creative-commons-nc &gt;}} <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)</a></p>
+<p>Content <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> 2025 by Ian McCarthy<br> All content licensed under a <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-nc" aria-label="creative-commons-nc"></i> <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Made with {{&lt; fa brands r-project &gt;}} and <a href="https://quarto.org/">Quarto</a><br> <a href="https://github.com/imccart/econ470-spring2024">View the source at {{&lt; fa brands github &gt;}} GitHub</a></p>
+<p>Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a><br> <a href="https://github.com/imccart/econ470-spring2024">View the source at <i class="fa-brands fa-github" aria-label="github"></i> GitHub</a></p>
 </div>
   </div>
 </footer>

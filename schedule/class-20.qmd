@@ -1,17 +1,18 @@
 ---
-title: "Class 20: Regression Discontinuity Part I"
+title: "Class 20: Regression Discontinuity Part II"
 ---
 
-We'll begin implementing an RD with simulated data. We'll discuss the basics of the RD identification strategy, its implementation, and some details including bin and bandwidth selection.
+Today we'll work with a real-life example of RD using Medicare Advantage star ratings.
 
 ## Objectives
 
-- Describe the intuition underlying the RD identification strategy
-- Implement an RD strategy with simulated data
-- Explain optimal bandwidth and bin width selection
+- Explain optimal bin width and bandwidth calculations
+- Define "manipulation" of the running variable
+- Define what we mean by "covariate balance" and why it matters for RDD
 
 
 ## Activities 
 
-- Clone the [Medicare Advantage](https://github.com/imccart/ma-class) repository (if you haven't already) and begin working with data
-- Implement RD design with simulated data in R
+- Implement an RD strategy with Medicare Advantage star ratings
+- Test for manipulation of the running variable
+- Test for covariate balance

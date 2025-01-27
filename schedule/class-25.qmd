@@ -1,15 +1,16 @@
 ---
-title: "Class 25: Introduction to Difference-in-Differences"
+title: "Class 25: Difference-in-Differences in Practice"
 ---
 
-The goal of Part 2 of this module is to introduce the difference-in-differences identification strategy and begin to implement this strategy with simulated data.
+The goal for today is to examine how to use a DD strategy with real-life data and discuss some current issues with the implementation of DD designs in practice
 
 
 ## Objectives
 
-- Describe the basics of panel data and fixed effects
-- Describe the DD research design
+- Understand and explain some of the difficulties when interpreting the results of regression-based DD estimates
+- Be aware of alternative estimators that may be applicable in some settings
 
 ## Activities 
 
-- Implement DD using simple averages and in a regression context
+- Estimate an event study with constant treatment timing
+- Estimate an event study with differential treatment timing

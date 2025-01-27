@@ -8,7 +8,7 @@
 
 <meta name="description" content="Course on Research Methods with Health Care Applications at Emory University">
 
-<title>Class 12: Smoking and Demand Elasticity – Research in Health Economics</title>
+<title>Class 12: Data on Smoking and Cigarette Prices – Research in Health Economics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +21,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -59,6 +39,8 @@ div.csl-indent {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -88,12 +70,12 @@ div.csl-indent {
 }</script>
 
 
-<meta property="og:title" content="Class 12: Smoking and Demand Elasticity – Research in Health Economics">
+<meta property="og:title" content="Class 12: Data on Smoking and Cigarette Prices – Research in Health Economics">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://econ470s25.classes.ianmccarthyecon.com//files/social-image-f22.png">
 <meta property="og:site_name" content="Research in Health Economics">
 <meta property="og:locale" content="en_US">
-<meta name="twitter:title" content="Class 12: Smoking and Demand Elasticity – Research in Health Economics">
+<meta name="twitter:title" content="Class 12: Data on Smoking and Cigarette Prices – Research in Health Economics">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://econ470s25.classes.ianmccarthyecon.com//files/social-image-f22.png">
 <meta name="twitter:creator" content="@ianhealthecon">
@@ -154,8 +136,7 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#readings-and-other-links" id="toc-readings-and-other-links" class="nav-link active" data-scroll-target="#readings-and-other-links">Readings and other links</a></li>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
   <li><a href="#activities" id="toc-activities" class="nav-link" data-scroll-target="#activities">Activities</a></li>
   </ul>
 </nav>
@@ -165,7 +146,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Class 12: Smoking and Demand Elasticity</h1>
+<h1 class="title">Class 12: Data on Smoking and Cigarette Prices</h1>
 </div>
 
 
@@ -182,56 +163,26 @@ div.csl-indent {
 </header>
 
 
-<p>The goal of this module is to understand instrumental variables as a causal identification strategy. We’ll do this in the context of smoking and cigarette prices. Effectively, we want to estimate a demand curve for cigarettes, accounting for the fact that movements in quantity and price derive from changes in both supply and demand.</p>
-<section id="readings-and-other-links" class="level2">
-<h2 class="anchored" data-anchor-id="readings-and-other-links">Readings and other links</h2>
-<p>Links to papers are listed alongside the full reference.</p>
-<ul>
-<li><i class="fas fa-book"></i> Required readings for this module:
-<ul>
-<li>Chapter 7 of <a href="https://mixtape.scunning.com/">Causal Inference: The Mixtape</a></li>
-<li>Chapter 19 of <a href="https://theeffectbook.net/">The Effect: An Introduction to Research Design and Causality</a></li>
-</ul></li>
-<li><i class="fas fa-external-link-square-alt"></i> Supplemental information and readings:
-<ul>
-<li>Chapter 4 of <span class="citation" data-cites="angrist2009">(<a href="#ref-angrist2009" role="doc-biblioref">Angrist and Pischke 2009</a>)</span></li>
-<li><span class="citation" data-cites="gruber2001">(<a href="#ref-gruber2001" role="doc-biblioref">Gruber 2001</a>)</span>. Paper link <a href="https://www.aeaweb.org/articles?id=10.1257/jep.15.2.193">here</a>.</li>
-<li><span class="citation" data-cites="ross2003">(<a href="#ref-ross2003" role="doc-biblioref">Ross and Chaloupka 2003</a>)</span>. Paper link <a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.532.2071&amp;rep=rep1&amp;type=pdf">here</a></li>
-</ul></li>
-<li><i class="fa fa-database"></i> Data for this module:
-<ul>
-<li><a href="https://github.com/imccart-test/cdc-tobacco">CDC Tax Burden on Tobacco</a></li>
-</ul></li>
-</ul>
-</section>
+<p>Today we’ll discuss demand estimation in the context of smoking. We’ll also introduce the idea of instrumental variables as a way to estimate causal effects when confronted with selection on unobservables.</p>
 <section id="objectives" class="level2">
 <h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
 <ul>
-<li>Explain some of the history of smoking in the U.S.</li>
-<li>Describe the empirical barriers to estimating demand curves</li>
+<li>Understand CDC and tax data sources</li>
+<li>Introduce the idea of instrumental variables</li>
 </ul>
 </section>
 <section id="activities" class="level2">
 <h2 class="anchored" data-anchor-id="activities">Activities</h2>
 <ul>
-<li>Review homework 2 and matching/weighting in practice</li>
+<li>Begin working with CDC Tax Burden data</li>
+<li>Derive initial instrumental variables estimate</li>
+<li>Define and explain the instrumental variable estimate as a ratio of a “reduced-form” to a “first-stage” estimate</li>
 </ul>
-
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-angrist2009" class="csl-entry" role="listitem">
-Angrist, J., and J. Pischke. 2009. <em>Mostly <span>Harmless</span> <span>Econometrics</span></em>. Princeton, NJ: Princeton University Press.
-</div>
-<div id="ref-gruber2001" class="csl-entry" role="listitem">
-Gruber, Jonathan. 2001. <span>“Tobacco at the Crossroads: The Past and Future of Smoking Regulation in the <span>United</span> <span>States</span>.”</span> <em>Journal of Economic Perspectives</em> 15 (2): 193–212.
-</div>
-<div id="ref-ross2003" class="csl-entry" role="listitem">
-Ross, Hana, and Frank J Chaloupka. 2003. <span>“The Effect of Cigarette Prices on Youth Smoking.”</span> <em>Health Economics</em> 12 (3): 217–30.
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -656,13 +607,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Content {{&lt; fa brands creative-commons &gt;}} 2025 by Ian McCarthy<br> All content licensed under a {{&lt; fa brands creative-commons &gt;}} {{&lt; fa brands creative-commons-by &gt;}} {{&lt; fa brands creative-commons-nc &gt;}} <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)</a></p>
+<p>Content <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> 2025 by Ian McCarthy<br> All content licensed under a <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-nc" aria-label="creative-commons-nc"></i> <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Made with {{&lt; fa brands r-project &gt;}} and <a href="https://quarto.org/">Quarto</a><br> <a href="https://github.com/imccart/econ470-spring2024">View the source at {{&lt; fa brands github &gt;}} GitHub</a></p>
+<p>Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a><br> <a href="https://github.com/imccart/econ470-spring2024">View the source at <i class="fa-brands fa-github" aria-label="github"></i> GitHub</a></p>
 </div>
   </div>
 </footer>

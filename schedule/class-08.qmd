@@ -1,14 +1,13 @@
 ---
-title: "Class 8: Selection on Observables"
+title: "Class 8: Selection on Observables in Practice"
 ---
 
-This class begins our first attempt to estimate a causal treatment effect. We'll do so with a few approaches, all of which rely on the combination of a "selection on observables" or "conditional independence" assumption, along with a "common support" assumption.
+Today we'll continue our work with matching, reweighting, and regression, but in the context of real life data on hospital prices.
 
 ## Objectives
-- Understand and explain the differences between matching and re-weighting
-- Explain the implicit weighting in OLS regression and how to avoid such weighting
-- Calculate an ATE or ATT using regression, matching, and weighting
+- Understand HCRIS data and explain hospital pricing
+- Calculate an ATE or ATT using regression, matching, and weighting using real-world pricing data
 
 ## Activities 
 - Continue working with the [Hospital Cost Report Information System (HCRIS)](https://github.com/imccart/hcris-class) repository.
-- Estimate treatment effects with simulated data, using matching, regression, and re-weighting. The code file for in-class simulated data is available [here](https://imccart.github.io/econ470-content/01-hospital-pricing/in-class-code.R)
+- Estimate the effect of hospital penalties on hospital pricing

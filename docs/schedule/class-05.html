@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-01-24">
 <meta name="description" content="Course on Research Methods with Health Care Applications at Emory University">
 
-<title>Class 7: Selection on Observables – Research in Health Economics</title>
+<title>Class 5: Basics of Hospital Pricing – Research in Health Economics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -70,12 +91,12 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Class 7: Selection on Observables – Research in Health Economics">
+<meta property="og:title" content="Class 5: Basics of Hospital Pricing – Research in Health Economics">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://econ470s25.classes.ianmccarthyecon.com//files/social-image-f22.png">
 <meta property="og:site_name" content="Research in Health Economics">
 <meta property="og:locale" content="en_US">
-<meta name="twitter:title" content="Class 7: Selection on Observables – Research in Health Economics">
+<meta name="twitter:title" content="Class 5: Basics of Hospital Pricing – Research in Health Economics">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://econ470s25.classes.ianmccarthyecon.com//files/social-image-f22.png">
 <meta name="twitter:creator" content="@ianhealthecon">
@@ -136,8 +157,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
-  <li><a href="#activities" id="toc-activities" class="nav-link" data-scroll-target="#activities">Activities</a></li>
+  <li><a href="#readings-and-other-links" id="toc-readings-and-other-links" class="nav-link active" data-scroll-target="#readings-and-other-links">Readings and other links</a></li>
   </ul>
 </nav>
     </div>
@@ -146,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Class 7: Selection on Observables</h1>
+<h1 class="title">Class 5: Basics of Hospital Pricing</h1>
 </div>
 
 
@@ -154,6 +174,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 24, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -163,26 +189,46 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This class begins our first attempt to estimate a causal treatment effect. We’ll do so with a few approaches, all of which rely on the combination of a “selection on observables” or “conditional independence” assumption, along with a “common support” assumption.</p>
-<section id="objectives" class="level2">
-<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
+<p>In this module, we’ll introduce the idea of “selection on observables” and the different ways to exploit that idea to make casual statements. We’ll do this in the context of hospital pricing, the research question being whether and to what extent hospitals receiving a financial penalty also raise their prices.</p>
+<section id="readings-and-other-links" class="level2">
+<h2 class="anchored" data-anchor-id="readings-and-other-links">Readings and other links</h2>
+<p>Links to papers are listed alongside the full reference. PDFs of each paper are also available on <strong>Canvas</strong>.</p>
 <ul>
-<li>Understand and explain the differences between matching and re-weighting</li>
-<li>Explain the implicit weighting in OLS regression and how to avoid such weighting</li>
-<li>Calculate an ATE or ATT using regression, matching, and weighting</li>
-</ul>
-</section>
-<section id="activities" class="level2">
-<h2 class="anchored" data-anchor-id="activities">Activities</h2>
+<li><i class="fas fa-book"></i> Required readings for this module:
 <ul>
-<li>Continue working with the <a href="https://github.com/imccart/hcris-class">Hospital Cost Report Information System (HCRIS)</a> repository.</li>
-<li>Estimate treatment effects with simulated data, using matching, regression, and re-weighting. The code file for in-class simulated data is available <a href="https://imccart.github.io/econ470-content/01-hospital-pricing/in-class-code.R">here</a></li>
+<li>Chapter 5 of <a href="https://mixtape.scunning.com/">Causal Inference: The Mixtape</a></li>
+<li>Chapter 14 of <a href="https://theeffectbook.net/">The Effect: An Introduction to Research Design and Causality</a></li>
+</ul></li>
+<li><i class="fas fa-external-link-square-alt"></i> Supplemental information and readings:
+<ul>
+<li>Chapters 1-2, and 4 of <a href="https://mixtape.scunning.com/">Causal Inference: The Mixtape</a></li>
+<li>Chapters 1-5, 10, and 13 of <a href="https://theeffectbook.net/">The Effect: An Introduction to Research Design and Causality</a></li>
+<li>Chapters 2-3 of <span class="citation" data-cites="angrist2009">(<a href="#ref-angrist2009" role="doc-biblioref">Angrist and Pischke 2009</a>)</span></li>
+<li><span class="citation" data-cites="darden2018">(<a href="#ref-darden2018" role="doc-biblioref">Darden, McCarthy, and Barrette 2018</a>)</span></li>
+<li><span class="citation" data-cites="cooper2019">(<a href="#ref-cooper2019" role="doc-biblioref">Cooper et al. 2019</a>)</span>. Link to paper <a href="https://academic.oup.com/qje/article/134/1/51/5090426">here</a>.</li>
+</ul></li>
+<li><i class="fa fa-database"></i> Data for this module:
+<ul>
+<li><a href="https://github.com/imccart/HCRIS">Hospital Cost Report Information System (HCRIS)</a> repository</li>
+<li>See also a similar repository <a href="https://github.com/asacarny/hospital-cost-reports">here</a> from <a href="http://sacarny.com/">Adam Sacarny</a></li>
+</ul></li>
 </ul>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-angrist2009" class="csl-entry" role="listitem">
+Angrist, J., and J. Pischke. 2009. <em>Mostly <span>Harmless</span> <span>Econometrics</span></em>. Princeton, NJ: Princeton University Press.
+</div>
+<div id="ref-cooper2019" class="csl-entry" role="listitem">
+Cooper, Zack, Stuart V Craig, Martin Gaynor, and John Van Reenen. 2019. <span>“The Price Ain’t Right? <span>Hospital</span> Prices and Health Spending on the Privately Insured.”</span> <em>Quarterly Journal of Economics</em> 134 (1): 51–107.
+</div>
+<div id="ref-darden2018" class="csl-entry" role="listitem">
+Darden, Michael, Ian McCarthy, and Eric Barrette. 2018. <span>“Who <span>Pays</span> in <span>Pay</span>-for-<span>Performance</span>? <span>Evidence</span> from <span>Hospital</span> <span>Pricing</span>.”</span> Working {Paper} w24304. National Bureau of Economic Research.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
