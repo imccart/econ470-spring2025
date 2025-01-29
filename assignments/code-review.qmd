@@ -1,7 +1,7 @@
 ---
 title: "Peer Code Review"
-format:
-  pdf: default
+# format:
+#   pdf: default
 ---
 
 One of the best ways to improve your own coding and workflow is to study someone else's. That's the goal of the peer code review. For each of the first four homework assignments, you will be assigned a partner to review. The partner will be someone that you have not worked with as part of that assignment. You will be responsible for reviewing their code and providing feedback. You will also receive feedback from your partner on your code. Each peer code review is worth 5% toward your final grade (10 points total, 2 points per question) and consists of the following questions. You will submit your answers to these questions as an online form in GradeScope (via Canvas).
