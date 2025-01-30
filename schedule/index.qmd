@@ -24,8 +24,8 @@ Below is a breakdown of topics for each class day this semester. Assignments are
 
 | Class | Dates      | Topic                                       | Details | Slides | Assignment |
 |:-----:|------------|---------------------------------------------|:-------:|:------:|:----------:|
-|  5    | 2/3       | Basics of Hospital Pricing                  | [{{< fa magnifying-glass >}}](/schedule/class-06.html) | [{{< fa person-chalkboard >}}](https://imccart.github.io/empirical-methods-slides/01-so/01-so1.html) | | 
-|  6    | 2/5       | Understanding HCRIS Data                    | [{{< fa magnifying-glass >}}](/schedule/class-06.html) | [{{< fa person-chalkboard >}}](https://imccart.github.io/empirical-methods-slides/01-so/01-so2.html) | | 
+|  5    | 2/3        | Basics of Hospital Pricing                  | [{{< fa magnifying-glass >}}](/schedule/class-06.html) | [{{< fa person-chalkboard >}}](https://imccart.github.io/empirical-methods-slides/01-so/01-so1.html) | | 
+|  6    | 2/5        | Understanding HCRIS Data                    | [{{< fa magnifying-glass >}}](/schedule/class-06.html) | [{{< fa person-chalkboard >}}](https://imccart.github.io/empirical-methods-slides/01-so/01-so2.html) | | 
 |  7    | 2/10       | Selection on Observables, Part I            | [{{< fa magnifying-glass >}}](/schedule/class-07.html) | [{{< fa person-chalkboard >}}](https://imccart.github.io/empirical-methods-slides/01-so/01-so3.html) | | 
 |  8    | 2/12       | Selection on Observables, Part II           | [{{< fa magnifying-glass >}}](/schedule/class-08.html) | [{{< fa person-chalkboard >}}](https://imccart.github.io/empirical-methods-slides/01-so/01-so4.html) | | 
 |  9    | 2/17       | **Homework 2, Initial Submission**          | | | [{{< fa pen  >}}](/assignments/homework2.html) |
