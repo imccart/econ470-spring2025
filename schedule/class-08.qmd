@@ -1,5 +1,6 @@
 ---
 title: "Class 8: Selection on Observables in Practice"
+date: 2025-02-17
 ---
 
 Today we'll continue our work with matching, reweighting, and regression, but in the context of real life data on hospital prices.

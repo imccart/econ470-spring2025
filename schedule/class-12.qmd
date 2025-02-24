@@ -1,5 +1,7 @@
 ---
 title: "Class 12: Data on Smoking and Cigarette Prices"
+date: 2025-02-24
+
 ---
 
 Today we'll discuss demand estimation in the context of smoking. We'll also introduce the idea of instrumental variables as a way to estimate causal effects when confronted with selection on unobservables.

@@ -1,5 +1,6 @@
 ---
 title: "Class 11: Smoking and Demand Elasticity"
+date: 2025-02-24
 ---
 
 The goal of this module is to understand instrumental variables as a causal identification strategy. We'll do this in the context of smoking and cigarette prices. Effectively, we want to estimate a demand curve for cigarettes, accounting for the fact that movements in quantity and price derive from changes in both supply and demand.

@@ -1,5 +1,6 @@
 ---
 title: "Class 7: Selection on Observables"
+date: 2025-02-17
 ---
 
 This class begins our first attempt to estimate a causal treatment effect. We'll do so with a few approaches, all of which rely on the combination of a "selection on observables" or "conditional independence" assumption, along with a "common support" assumption.
