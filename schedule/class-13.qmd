@@ -1,5 +1,6 @@
 ---
 title: "Class 13: Instrumental Variables Part I"
+date: 2025-02-28
 ---
 
 Today we'll formally introduce instrumental variables and discuss some of the thorny issues associated with IV in practice (namely, testing for instrument validity and interpreting the results).
