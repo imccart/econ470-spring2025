@@ -1,5 +1,6 @@
 ---
 title: "Class 19: Regression Discontinuity Part I"
+date: 2025-03-23
 ---
 
 We'll begin implementing an RD with simulated data. We'll discuss the basics of the RD identification strategy, its implementation, and some details including bin and bandwidth selection.

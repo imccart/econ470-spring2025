@@ -1,5 +1,6 @@
 ---
 title: "Class 18: Medicare Advantage Data"
+date: 2025-03-23
 ---
 
 Today we'll revisit the MA data from Module 0. We'll also introduce data on the MA quality rating program and how it plays out in real life.

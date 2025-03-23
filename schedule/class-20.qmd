@@ -1,5 +1,6 @@
 ---
 title: "Class 20: Regression Discontinuity Part II"
+date: 2025-03-23
 ---
 
 Today we'll work with a real-life example of RD using Medicare Advantage star ratings.
