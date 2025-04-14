@@ -135,7 +135,7 @@
     "href": "schedule/index.html#module-4-medicaid-expansion-and-difference-in-differences",
     "title": "Schedule",
     "section": "Module 4: Medicaid Expansion and Difference-in-Differences",
-    "text": "Module 4: Medicaid Expansion and Difference-in-Differences\n\n\n\n\n\n\n\n\n\n\n\nClass\nDates\nTopic\nDetails\nSlides\nAssignment\n\n\n\n\n23\n4/14\nMedicare Advantage\n\n\n\n\n\n24\n4/16\nDifference-in-Differences, Part I\n\n\n\n\n\n25\n4/21\nDifference-in-Differences, Part II\n\n\n\n\n\n26\n4/23\nHomework 5, Initial Submission\n\n\n\n\n\n27\n4/28\nHomework 5, Second Submission\n\n\n\n\n\n\n5/5\nHomework 5, Final Due Date"
+    "text": "Module 4: Medicaid Expansion and Difference-in-Differences\n\n\n\n\n\n\n\n\n\n\n\nClass\nDates\nTopic\nDetails\nSlides\nAssignment\n\n\n\n\n23\n4/14\nMedicaid and the ACA\n\n\n\n\n\n24\n4/16\nDifference-in-Differences, Part I\n\n\n\n\n\n25\n4/21\nDifference-in-Differences, Part II\n\n\n\n\n\n26\n4/23\nHomework 5, Initial Submission\n\n\n\n\n\n27\n4/28\nHomework 5, Second Submission\n\n\n\n\n\n\n5/5\nHomework 5, Final Due Date"
   },
   {
     "objectID": "schedule/class-25.html",
@@ -818,7 +818,7 @@
     "href": "schedule/class-23.html#activities",
     "title": "Class 23: Medicaid Expansion and Uninsurance",
     "section": "Activities",
-    "text": "Activities\n\nReview homework 4 and RD in practice\nImport ACS data via API in R\nSummarize insurance status over time"
+    "text": "Activities\n\nImport ACS data via API in R\nSummarize insurance status over time"
   },
   {
     "objectID": "schedule/class-17.html",

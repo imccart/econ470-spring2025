@@ -1,5 +1,6 @@
 ---
 title: "Class 23: Medicaid Expansion and Uninsurance"
+date: 2025-04-14
 ---
 
 The goal of this module is to understand difference-in-differences as a causal identification strategy. We'll do this in the context of Medicaid expansion and its effect on uninsurance. 
@@ -27,7 +28,6 @@ Links to papers are listed alongside the full reference
 
 ## Activities
 
-- Review homework 4 and RD in practice
 - Import ACS data via API in R
 - Summarize insurance status over time
 

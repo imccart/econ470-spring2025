@@ -66,7 +66,7 @@ Below is a breakdown of topics for each class day this semester. Assignments are
 
 | Class | Dates       | Topic                                       | Details | Slides | Assignment |
 |:-----:|-------------|---------------------------------------------|:-------:|:------:|:----------:|
-|  23   | 4/14        | Medicare Advantage                          | [{{< fa magnifying-glass >}}](/schedule/class-23.html) | [{{< fa person-chalkboard >}}](https://imccart.github.io/empirical-methods-slides/04-dd/04-dd1.html) | | 
+|  23   | 4/14        | Medicaid and the ACA                        | [{{< fa magnifying-glass >}}](/schedule/class-23.html) | [{{< fa person-chalkboard >}}](https://imccart.github.io/empirical-methods-slides/04-dd/04-dd1.html) | | 
 |  24   | 4/16        | Difference-in-Differences, Part I           | [{{< fa magnifying-glass >}}](/schedule/class-24.html) | [{{< fa person-chalkboard >}}](https://imccart.github.io/empirical-methods-slides/04-dd/04-dd2.html) | | 
 |  25   | 4/21        | Difference-in-Differences, Part II          | [{{< fa magnifying-glass >}}](/schedule/class-25.html) | [{{< fa person-chalkboard >}}](https://imccart.github.io/empirical-methods-slides/04-dd/04-dd3.html) | | 
 |  26   | 4/23        | **Homework 5, Initial Submission**          | | | [{{< fa pen  >}}](/assignments/homework5.html) |
